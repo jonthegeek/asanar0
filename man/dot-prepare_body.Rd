@@ -19,4 +19,3 @@ A prepared body list object with a "json" or "multipart" subclass.
 \description{
 Prepare the body of a call
 }
-\keyword{internal}

@@ -1,4 +1,4 @@
-with_mock_dir("users", {
+with_mock_dir("mocks/users", {
   test_that("asn_get_users works", {
     expect_no_error({
       test_result <- asn_get_users()

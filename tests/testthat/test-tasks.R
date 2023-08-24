@@ -1,4 +1,4 @@
-with_mock_dir("tasks", {
+with_mock_dir("mocks/tasks", {
   test_that("asn_get_stories_for_task works", {
     expect_no_error({
       test_result <- asn_get_stories_for_task(task_gid = "1204206388054744")

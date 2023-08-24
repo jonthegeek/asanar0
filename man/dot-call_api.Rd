@@ -30,4 +30,3 @@ The result of the call.
 This is unexported because I intend to use it from endpoint-specific
 functions.
 }
-\keyword{internal}

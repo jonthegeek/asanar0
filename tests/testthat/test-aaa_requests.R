@@ -1,4 +1,4 @@
-with_mock_dir("aaa_requests", {
+with_mock_dir("mocks/aaa_requests", {
   test_that("GET requests work", {
     expect_snapshot({
       .call_api(
@@ -19,6 +19,22 @@ with_mock_dir("aaa_requests", {
   })
 
   test_that("POST requests work", {
+    # Confirm gids of sections.
+    # test_project <- .call_api(endpoint = "projects") |>
+    #   purrr::keep(
+    #     ~ .x$name == "asanar tests"
+    #   ) |>
+    #   purrr::flatten()
+    #
+    # sections <- .call_api(
+    #   endpoint = list(
+    #     "projects/{project_gid}/sections",
+    #     project_gid = test_project$gid
+    #   )
+    # ) |>
+    #   purrr::map(as.data.frame) |>
+    #   purrr::list_rbind()
+
     # Check the Incoming section to get the task ID.
     expect_snapshot({
       test_result <- .call_api(
