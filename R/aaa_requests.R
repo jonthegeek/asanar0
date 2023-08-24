@@ -16,7 +16,7 @@
 #'   variable.
 #'
 #' @return The result of the call.
-#' @keywords internal
+#' @export
 .call_api <- function(endpoint,
                       query,
                       body,
@@ -188,7 +188,7 @@
 #' @param mime_type The mime_type of any file included in the body.
 #'
 #' @return A prepared body list object with a "json" or "multipart" subclass.
-#' @keywords internal
+#' @export
 .prepare_body <- function(body, type = c("json", "multipart"), mime_type) {
   type <- rlang::arg_match(type)
 

@@ -6,14 +6,13 @@
 \alias{asanar-package}
 \title{asanar: 'Asana' 'API'}
 \description{
-Client to access the 'Asana' 'API'.
+Client to access the 'Asana' 'API'. Frozen dev version.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/jonthegeek/asanar}
-  \item \url{https://jonthegeek.github.io/asanar/}
-  \item Report bugs at \url{https://github.com/jonthegeek/asanar/issues}
+  \item \url{https://github.com/jonthegeek/asanar0}
+  \item Report bugs at \url{https://github.com/jonthegeek/asanar0/issues}
 }
 
 }

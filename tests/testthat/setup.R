@@ -8,7 +8,7 @@ if (Sys.getenv("ASN_API_TEST_MODE") == "capture") {
       "Unset ASN_API_TEST_MODE to use the mocked calls."
     )
   }
-  unlink(test_path("asana.com"), recursive = TRUE)
+  unlink(test_path("mocks"), recursive = TRUE)
 }
 
 # Avoid long paths.
