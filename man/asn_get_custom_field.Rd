@@ -43,4 +43,3 @@ Custom Fields store the metadata that is used in order to add user-specified inf
 \description{
 Get the complete definition of a custom field’s metadata.  Since custom fields can be defined for one of a number of types, and these types have different data and behaviors, there are fields that are relevant to a particular type. For instance, as noted above, enum_options is only relevant for the enum type and defines the set of choices that the enum could represent. The examples below show some of these type-specific custom field definitions.
 }
-\keyword{internal}

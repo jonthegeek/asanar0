@@ -34,4 +34,3 @@ Custom Fields Settings objects represent the many-to-many join of the Custom Fie
 \description{
 Returns a list of all of the custom fields settings on a project, in compact form. Note that, as in all queries to collections which return compact representation, \code{opt_fields} can be used to include more data than is returned in the compact representation. See the \href{https://developers.asana.com/docs/#input-output-options}{getting started guide on input/output options} for more information.
 }
-\keyword{internal}
