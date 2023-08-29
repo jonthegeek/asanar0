@@ -17,10 +17,8 @@
 #' | parent | list | The parent to which the custom field is applied. This can be a project or portfolio and indicates that the tasks or projects that the parent contains may be given custom field values for this custom field. |
 #' | project | list | *Deprecated: new integrations should prefer the `parent` field.* The id of the project that this custom field settings refers to. |
 #'
-#' @keywords internal
+#' @export
 asn_get_custom_field_settings_for_project <- function(project_gid, limit, offset, opt_fields) {
-  # Confirm that this makes sense. If so, change
-  # @keywords internal to @export. Also enable covr!
   # nocov start
   .call_api(
     endpoint = list("/projects/{project_gid}/custom_field_settings", project_gid = project_gid),

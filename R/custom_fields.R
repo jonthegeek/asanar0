@@ -84,10 +84,8 @@ asn_create_custom_field <- function(limit, offset, opt_fields) {
 #' | created_by | list | A *user* object represents an account in Asana that can be given access to various workspaces, projects, and tasks. |
 #' | people_value | list | *Conditional*. Only relevant for custom fields of type `people`. This array of [compact user](https://developers.asana.com/reference/users) objects reflects the values of a `people` custom field. |
 #'
-#' @keywords internal
+#' @export
 asn_get_custom_field <- function(custom_field_gid, opt_fields) {
-  # Confirm that this makes sense. If so, change
-  # @keywords internal to @export. Also enable covr!
   # nocov start
   .call_api(
     endpoint = list("/custom_fields/{custom_field_gid}", custom_field_gid = custom_field_gid),

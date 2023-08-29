@@ -320,10 +320,8 @@ asn_create_task <- function(opt_fields) {
 #' | tags | list | Array of tags associated with this task. In order to change tags on an existing task use `addTag` and `removeTag`. |
 #' | workspace | list | *Create-only*. The workspace this task is associated with. Once created, task cannot be moved to a different workspace. This attribute can only be specified at creation time. |
 #'
-#' @keywords internal
+#' @export
 asn_get_task <- function(task_gid, opt_fields) {
-  # Confirm that this makes sense. If so, change
-  # @keywords internal to @export. Also enable covr!
   # nocov start
   .call_api(
     endpoint = list("/tasks/{task_gid}", task_gid = task_gid),
